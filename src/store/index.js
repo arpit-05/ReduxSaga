@@ -15,7 +15,10 @@ const configureStore = () => {
         ),
     );
     sagaMiddleware.run(rootSaga);
-    store.dispatch({ type: 'HELLO' });
+    // store.dispatch({ type: 'LOGOUT' });
+    // store.dispatch({ type: 'LOGIN' });
+    // store.dispatch({ type: 'LOGOUT' });
+    store.dispatch({ type: 'DANG' });
     return store;
 };
 
